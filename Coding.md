@@ -1,5 +1,7 @@
 # Coding
 
+A list of algorithms commonly used to solve leetcode problems
+
 ## Two Pointers
 
 Time Complexity: O(N)
