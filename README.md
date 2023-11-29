@@ -1,4 +1,4 @@
 # InterviewNotes
 A working repository of notes I'm taking while studying for interviews
 
-- [Coding Notes](./Coding.md)
+- [Leetcode Algorithms](./leetcode_algorithms.md)
