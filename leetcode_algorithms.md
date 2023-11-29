@@ -72,11 +72,6 @@ for interval in intervals[1:]:
         result.append(interval)
 ```
 
-## Two Heaps
-Time Complexity: O(nlogn)
-- Track two extreme values repeatedly
-- Input not sorted
-
 ## Quickselect
 Time Complexity: O(n) average, O(n^2) worst case
 
