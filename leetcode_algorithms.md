@@ -72,6 +72,33 @@ for interval in intervals[1:]:
         result.append(interval)
 ```
 
+## Merge Two Lists
+
+Time Complexity: O(n)
+- two sorted lists
+
+```python
+def merge_lists(l1, l2):
+  head = curr = ListNode(0)
+
+  while l1 and l2:
+    if l1.val <= l2.val:
+      curr.next = l1
+      l1 = l1.next
+    else:
+      curr.next = l2
+      l2 = l1
+      l1 = curr.next.next
+
+  if not l1:
+    curr.next = l2
+  else:
+    curr.next = l1
+
+  return head.next
+  
+```
+
 ## Quickselect
 Time Complexity: O(n) average, O(n^2) worst case
 
