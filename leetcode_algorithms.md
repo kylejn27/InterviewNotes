@@ -12,14 +12,14 @@ Time Complexity: O(N)
 ```python
 start, end = 0, len(array) - 1
 
-while start < end:
-    ## condition on array[start] and array[end]
-    # ...
-    # ...
-    ##
+while left < right:
+    # do some logic here with left and right
+    if CONDITION:
+        left += 1
+    else:
+        right -= 1
 
-    start += 1
-    end -= 1
+return ans
 ```
 
 ## Fast and Slow Pointers
@@ -45,11 +45,19 @@ Time Complexity: O(n)
 - Repeated computations on contiguous set of elements
 
 ```python
-start = 0
-for end in range(len(array)):
-    if end - start == window:
-        # computation here
-        start += 1
+def fn(arr):
+    left = ans = curr = 0
+
+    for right in range(len(arr)):
+        # do logic here to add arr[right] to curr
+
+        while WINDOW_CONDITION_BROKEN:
+            # remove arr[left] from curr
+            left += 1
+
+        # update ans
+    
+    return ans
 ```
 
 ## Merge Intervals
